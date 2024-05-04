@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 3rem 1rem;
+  background-color: #D9CAB3;
+}
+
+select {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 0rem .5rem 1rem;
+  background-color: rgb(1, 106, 106);
+  border: none;
+  color: whitesmoke;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .4);
+  text-transform: uppercase;
+}
+
+#recipes-list {
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: ; */
+  gap: 4rem 3rem;
+}
+
+
+
+#recipes-list>li {
+  position: relative;
+  background-color: darkcyan;
+  color: whitesmoke;
+  border-radius: 15px;
+  overflow: hidden;
+  overflow-y: auto;
+  /* margin-bottom: 3rem; */
+  padding: 20rem 2rem 2rem;
+  width: 24%;
+  max-height: 900px;
+  width: 400px;
+  max-width: 95vw;
+  /* max-width: 300px; */
+  display: inline-block;
+
+  &>div {
+    margin-top: 1rem;
+
+    & div>p {
+      text-align: right;
+    }
+  }
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20rem;
+  /* max-height: 20rem; */
+  width: 100%;
+  object-fit: cover;
+}
+
+hr {
+  color: whitesmoke;
+  margin-top: 1rem;
+}
+
+.ingredients {
+  list-style-type: square;
+  padding-left: 1rem;
+}
+
+.steps {
+  /* list-style-type: decimal-leading-zero; */
+  padding-left: 1rem;
+}
+
+html {
+  scrollbar-color: rgb(1, 108, 108) rgb(42, 58, 58);
+}
+
+#popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: aquamarine;
+  z-index: 100;
+
+  form {
+    margin-top: 2rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid darkcyan;
+  }
+
+  input {
+    padding: .5rem 1rem;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+
+    &:focus {
+      background-color: antiquewhite;
+    }
+  }
+
+  button {
+    border: none;
+    height: 100%;
+    width: 2rem;
+    /* border: 2px solid darkcyan; */
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+    /* border-top-left-radius: 5px; */
+    /* border-bottom-left-radius: 5px; */
+
+    /* line-height: 2rem; */
+    /* font-size: 2rem; */
+  }
+
+  small {
+    opacity: 0;
+    color: red;
+    margin-top: 1rem;
+  }
+}
