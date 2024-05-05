@@ -27,129 +27,6 @@ const recipes = [
     imgSrc: "./images/chleb_zytni_2000.jpg"
   },
   {
-    name: 'Owsianka z owocami',
-    whichMeal: "śniadanie",
-    kcal: 400,
-    ingredients: [
-      {ingrName: 'jabłko (małe)', amount: 1, unit: 'sztuka', gram: 150},
-      {ingrName: 'woda', amount: "2/3", unit: 'szklanki', gram: 180},
-      {ingrName: 'płatki owsiane', amount: "3", unit: 'łyżki', gram: 30},
-      {ingrName: 'cynamon', amount: "1", unit: 'szczypta'},
-      {ingrName: 'miód', amount: "1", unit: 'łyżka', gram: 25},
-      {ingrName: 'borówki', amount: "1", unit: 'garść', gram: 50},
-      {ingrName: 'maliny', amount: "1", unit: 'garść', gram: 50},
-      {ingrName: 'płatki migdałów', amount: "1", unit: 'łyżka', gram: 10},
-    ],
-    steps: [
-      "Jabłko obrać, pokroić na ćwiartki i rozdrobnić [4 s / obr. 5]. Przełożyć do innego naczynia.",
-      "Do naczynia miksującego wlać wodę, dodać płatki owsiane i cynamon.",
-      "Gotować [10 min / 95&deg;C / obr. wsteczne 1].",
-      "Dodać jabłko i miód, wymieszać z zatkaną miarką [10 s / obr. wsteczne 1,5].",
-      "Przełożyć do miseczki, posypać owocami i płatkami migdałów."
-    ],
-    time: "15 minut",
-    notes: "",
-    imgSrc: ""
-  },
-    {
-    name: 'Sałatka z pomarańczą, mozzarellą i orzechami włoskimi',
-    whichMeal: "drugie śniadanie",
-    kcal: 330,
-    ingredients: [
-      {ingrName: 'szpinak', amount: 2, unit: 'garście'},
-      {ingrName: 'ser mozzarella', amount: "50", unit: 'g'},
-      {ingrName: 'pomarańcza', amount: "1/2", unit: 'sztuki'},
-      {ingrName: 'oliwa', amount: "1", unit: 'łyżeczka'},
-      {ingrName: 'miód', amount: "1", unit: 'łyżeczka'},
-      {ingrName: 'ocet balsamiczny', amount: "1", unit: 'łyżeczka'},
-      {ingrName: 'orzechy włoskie', amount: "1", unit: 'łyżka', gram: 15}
-    ],
-    steps: [
-      "Do miseczki wrzucić szpinak, pokrojone w kosteczkę pomarańczę i mozzarellę.",
-      "Polać dressingiem z oliwy, miodu i octu balsamicznego, posypać orzechami."
-    ],
-    time: "5 minut",
-    notes: "",
-    imgSrc: ""
-  },
-  {
-    name: 'Kurczak z sosem czosnkowym i warzywami',
-    whichMeal: "obiad",
-    kcal: 420,
-    ingredients: [
-      {ingrName: 'filet z piersi kurczaka', amount: "1/2", unit: 'sztuki', gram: 150},
-      {ingrName: 'marynata'},
-      {ingrName: 'oliwa z oliwek', amount: "1", unit: 'łyżka', gram: 10},
-      {ingrName: 'fasolka szparagowa/warzywa na parze', amount: "200", unit: 'g'},
-      {ingrName: 'czosnek granulowany'},
-      {ingrName: 'sezam', amount: "1", unit: 'łyżka', gram: 10},
-      {ingrName: 'czosnek', amount: "1", unit: 'ząbek'},
-      {ingrName: 'jogurt naturalny, gęsty', amount: "2", unit: 'łyżki', gram: 40},
-      {ingrName: 'sól, pieprz, oregano'},
-      {ingrName: 'koperek', amount: "1", unit: 'łyżka'},
-    ],
-    steps: [
-      "Filet z kurczaka lekko rozbić, marynować w przyprawach z oliwą, ułożyć w głębokim wkładzie (można też ugrillować), a w górnej wkładce umieścić fasolkę szparagową/warzywa (można lekko osolić).",
-      "Do naczynia miksującego wlać 600g wody (lub bulionu). Gotować mięso i warzywa [ok. 20 min / ??? &deg;C / obr. wsteczne 1]",
-      "W miseczce wymieszać jogurt, czosnek przeciśnięty przez praskę i koperek (można pominąć), doprawić do smaku.",
-      "Mięso podawać z sosem i z fasolką szparagową lub warzywami wymieszanymi z czosnkiem granulowanym i posypanym uprażonym na suchej patelni sezamem."
-    ],
-    time: "35 minut + marynowanie",
-    notes: "Marynata - według uznania, np. sól, pieprz, papryka słodka, zioła prowansalskie lub przyprawa do grilla (bez e-dodatków)",
-    imgSrc: ""
-  },
-    {
-    name: 'Łosoś grillowany/gotowany na parze z tzatziki',
-    whichMeal: "obiad",
-    kcal: 410,
-    ingredients: [
-      {ingrName: 'ogórek', amount: 1, unit: 'sztuka', gram: 100},
-      {ingrName: 'czosnek', amount: 1, unit: 'ząbek'},
-      {ingrName: 'jogurt grecki', amount: 2, unit: 'łyżki', gram: 40},
-      {ingrName: 'erytrol', amount: "1/2", unit: 'łyżeczki'},
-      {ingrName: 'ocet winny/jabłkowy', amount: "1", unit: 'łyżeczka'},
-      {ingrName: 'łosoś, świeży', amount: 150, unit: 'g'},
-      {ingrName: 'sól, pieprz ziołowy', amount: 'do smaku'},
-      {ingrName: 'sok z cytryny', amount: "1", unit: 'łyżeczka'},
-      {ingrName: 'fasolka szparagowa/warzywa na parze', amount: 200, unit: 'g'},
-    ],
-    steps: [
-      "Do naczynia miksującego włożyć ogórek i odrobinę posolić, rozdrobnić [3 s / obr. 5]. Przełożyć do koszyczka i usunąć nadmiar wody dociskając dłońmi.",
-      "Do naczynia włożyć czosnek, rozdrobnić [3 s / obr. 7].",
-      "Dodać ogórki, jogurt grecki, erytrol i ocet. Wymieszać [10 s / obr. wsteczne 1,5], przełożyć do miseczki i wymieszać z ogórkami. Umyć naczynie miksujące.",
-      "Rybę przyprawić solą, pieprzem ziołowym i skropić sokiem z cytryny.",
-      "Ułożyć na górnym wkładzie (można też zapiekać w piekarniku). W dolnej przystawce umieścić warzywa (można lekko osolić). Do naczynia miksującego wlać 500g wody, nałożyć przystawki, gotować na parze [15-20 min / ??? / obr. 1].",
-      "Rybę podawać z sosem tzatziki i fasolką szparagową/warzywami (można doprawić solą, czosnkiem granulowanym)."
-    ],
-    time: "30 minut",
-    notes: "",
-    imgSrc: ""
-  },
-      {
-    name: 'Kanapki z śródziemnomorską pastą',
-    whichMeal: "kolacja",
-    kcal: 280,
-    ingredients: [
-      {ingrName: 'bazylia (świeża)', amount: 1, unit: 'garść'},
-      {ingrName: 'oliwki czarne', amount: 5, unit: 'sztuk', gram: 20},
-      {ingrName: 'pomidory suszone w oleju', amount: 6, unit: 'plastrów', gram: 40},
-      {ingrName: 'ser typu "Feta"', amount: "1/2", unit: 'kostki', gram: 100},
-      {ingrName: 'serek śmietankowy, naturalny (np. Almette)', amount: "2", unit: 'łyżki', gram: 50},
-      {ingrName: 'koncentrat pomidorowy 30%', amount: 1, unit: 'łyżeczka', gram: 15},
-      {ingrName: 'chleb żytni', amount: 2, unit: "kromki"},
-      {ingrName: 'warzywa (np. pomidor, ogórek, papryka, kiełki, szpinak/sałata)'},
-    ],
-    steps: [
-      "Do naczynia miksującego włożyć bazylię, rozdrobnić [3 s / obr. 8], zgarnąć na dno.",
-      "Dodać oliwki, rozdrobnić [10 s / obr. 4,5].",
-      "Dodać odsączone pomidory, ser feta, twarożek, koncentrat pomidorowy, rozdrobnić [8 s / obr. 8]. Gdyby pasta była zbyt gęsta, dodać 2-3 łyżki jogurtu.",
-      "Podawać na chlebie, z warzywami."
-    ],
-    time: "5 minut",
-    notes: "",
-    imgSrc: ""
-  },
-  {
     name: 'Parówki z chrzanem, sałatka z ogórka kiszonego i pomidora',
     whichMeal: "śniadanie",
     kcal: 360,
@@ -600,6 +477,240 @@ const recipes = [
       "Tortillę zwinąć w rulon."
     ],
     time: "15 minut",
+    notes: "",
+    imgSrc: ""
+  },
+  {
+    name: 'Pomarańczowa owsianka z bakaliami i cynamonem',
+    whichMeal: "śniadanie",
+    kcal: 400,
+    ingredients: [
+      {ingrName: 'morele suszone', amount: 25, unit: 'g'},
+      {ingrName: 'jabłko', amount: "1/2", unit: 'sztuki', gram: 90},
+      {ingrName: 'napój migdałowy (niesłodzony)', amount: "1/3", unit: 'szklanki', ml: 100},
+      {ingrName: 'płatki owsiane', amount: 3, unit: 'łyżki', gram: 35},
+      {ingrName: 'rodzynki', amount: 1, unit: 'łyżka', gram: 8},
+      {ingrName: 'cynamon, kardamon', amount: "po szczypcie"},
+      {ingrName: 'sok pomarańczowy', amount: "1/3", unit: 'szklanki', gram: 100},
+      {ingrName: 'orzechy włoskie', amount: 1, unit: 'łyżka', gram: 10},
+    ],
+    steps: [
+      "W naczyniu miksującym umieścić morele i rozdrobnić [3 s / obr. 7] (jeśli są bardzo twarde, można uprzednio namoczyć kilka minut w gorącej wodzie).",
+      "Dodać jabłko i rozdrobnić [4 s / obr. 4], zgarnąć kopystką.",
+      "Dodać napój migdałowy, płatki owsiane, rodzynki oraz przyprawy i gotować [8 min / 95&deg;C / obr. wsteczne 1] (w razie potrzeby można dosłodzić erytrolem i wymieszać).",
+      "Przełożyć do miseczki, posypać orzechami."
+    ],
+    time: "15 minut",
+    notes: "",
+    imgSrc: ""
+  },
+  {
+    name: 'Sałatka z serem pleśniowym i granatem',
+    whichMeal: "drugie śniadanie",
+    kcal: 290,
+    ingredients: [
+      {ingrName: 'rukola/mix sałat', amount: 2, unit: 'garście'},
+      {ingrName: 'ser pleśniowy gorgonzola/lazur błękitny', amount: 30, unit: 'g'},
+      {ingrName: 'cebula czerwona', amount: "1/4", unit: 'sztuki', gram: 25},
+      {ingrName: 'granat', amount: "1/4", unit: 'sztuki', gram: 25},
+      {ingrName: 'orzechy włoskie', amount: 1, unit: 'łyżka', gram: 10},
+      {ingrName: 'czosnek', amount: 1, unit: 'ząbek'},
+      {ingrName: 'świeży sok z pomarańczy (można wycisnąć)', amount: 1, unit: 'łyżka'},
+      {ingrName: 'miód', amount: 1, unit: 'łyżeczka'},
+      {ingrName: 'oliwa z oliwek', amount: 1, unit: 'łyżeczka'},
+      {ingrName: 'ocet balsamiczny', amount: 1, unit: 'łyżeczka'},
+    ],
+    steps: [
+      "Sałatę wyłożyć na talerz.",
+      "Ser pleśniowy pokruszyć i dodać do sałaty.",
+      "Cebulę pokroić w piórka.",
+      "Dodać granat i lekko posiekane orzechy.",
+      "Sos: Czosnek drobno posiekać, dodać sok z pomarańczy, oliwę, miód oraz ocet balsamiczny.",
+      "Gotowym sosem polać sałatkę."
+    ],
+    time: "15 minut",
+    notes: "",
+    imgSrc: ""
+  },
+  {
+    name: 'Leczo',
+    whichMeal: "obiad",
+    kcal: 370,
+    ingredients: [
+      {ingrName: 'boczek wędzony', amount: 60, unit: 'g'},
+      {ingrName: 'oliwa z oliwek', amount: 2, unit: 'łyżki', gram: 20},
+      {ingrName: 'kiełbasa (np. drobiowa lub z szynki)', amount: 3, unit: 'sztuki', gram: 300},
+      {ingrName: 'cebula', amount: 2, unit: 'sztuki', gram: 200},
+      {ingrName: 'czosnek', amount: 2, unit: 'ząbki'},
+      {ingrName: 'cukinia', amount: 1, unit: 'sztuka', gram: 250},
+      {ingrName: 'papryka czerwona', amount: 1, unit: 'sztuka'},
+      {ingrName: 'papryka żółta', amount: 1, unit: 'sztuka'},
+      {ingrName: 'fasolka szparagowa (opcjonalnie)', amount: 200, unit: 'g'},
+      {ingrName: 'erytrol', amount: 1, unit: 'łyżeczka', gram: 5},
+      {ingrName: 'papryka słodka, chili, pieprz, sól, oregano'},
+      {ingrName: 'pomidory w puszce', amount: 1, unit: 'sztuka', gram: "350-400"},
+    ],
+    steps: [
+      "Na suchej patelni podsmażyć boczek, dodać 1 łyżkę oliwy, pokrojoną w kostkę kiełbasę i podsmażyć. Odstawić.",
+      "Do naczynia miksującego włożyć połówki cebuli i czosnek, rozdrobnić [3 s / obr. 5]. Zgarnąć kopystką.",
+      "Dodać 1 łyżkę oliwy i dusić [4 min / 120&deg'C / obr. 1].",
+      "Dodać kiełbasę i boczek, pokrojoną w kostkę cukinię (ze skórką), papryki oraz fasolkę pokrojoną  w 4cm kawałki, przyprawić do smaku, dodać erytrol.",
+      "Dusić [10 min / 100&deg;C / obr. kopystka ???].",
+      "Dodać pomidory w puszce, zamiast miarki na pokrywie naczynia umieścić koszyczek, gotować kolejne [10 min / 100&deg;C / obr. 'kopystka' ???].",
+      "Doprawić do smaku."
+    ],
+    time: "45 minut",
+    notes: "4 porcje",
+    imgSrc: ""
+  },
+  {
+    name: 'Kanapki z miodem, truskawkami i twarożkiem',
+    whichMeal: "kolacja",
+    kcal: 330,
+    ingredients: [
+      {ingrName: 'chleb żytni', amount: 2, unit: 'kromki'},
+      {ingrName: 'twaróg półtłusty', amount: 50, unit: 'g'},
+      {ingrName: 'truskawki', amount: "kilka", unit: 'sztuk'},
+      {ingrName: 'miód', amount: "2-3", unit: 'łyżeczki', gram: 20},
+      {ingrName: 'orzechy włoskie', amount: 1, unit: 'łyżka', gram: 15},
+    ],
+    steps: [
+      "Na chlebie ułożyć cienkie plasterki twarogu, ułożyć plasterki truskawek, polać miodem i posypać rozdrobnionymi orzechami (można rozdrobnić [3 s / obr. 7])."
+    ],
+    time: "5 minut",
+    notes: "Chleb można podgrzać w tosterze",
+    imgSrc: ""
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    name: 'Owsianka z owocami',
+    whichMeal: "śniadanie",
+    kcal: 400,
+    ingredients: [
+      {ingrName: 'jabłko (małe)', amount: 1, unit: 'sztuka', gram: 150},
+      {ingrName: 'woda', amount: "2/3", unit: 'szklanki', gram: 180},
+      {ingrName: 'płatki owsiane', amount: "3", unit: 'łyżki', gram: 30},
+      {ingrName: 'cynamon', amount: "1", unit: 'szczypta'},
+      {ingrName: 'miód', amount: "1", unit: 'łyżka', gram: 25},
+      {ingrName: 'borówki', amount: "1", unit: 'garść', gram: 50},
+      {ingrName: 'maliny', amount: "1", unit: 'garść', gram: 50},
+      {ingrName: 'płatki migdałów', amount: "1", unit: 'łyżka', gram: 10},
+    ],
+    steps: [
+      "Jabłko obrać, pokroić na ćwiartki i rozdrobnić [4 s / obr. 5]. Przełożyć do innego naczynia.",
+      "Do naczynia miksującego wlać wodę, dodać płatki owsiane i cynamon.",
+      "Gotować [10 min / 95&deg;C / obr. wsteczne 1].",
+      "Dodać jabłko i miód, wymieszać z zatkaną miarką [10 s / obr. wsteczne 1,5].",
+      "Przełożyć do miseczki, posypać owocami i płatkami migdałów."
+    ],
+    time: "15 minut",
+    notes: "",
+    imgSrc: ""
+  },
+    {
+    name: 'Sałatka z pomarańczą, mozzarellą i orzechami włoskimi',
+    whichMeal: "drugie śniadanie",
+    kcal: 330,
+    ingredients: [
+      {ingrName: 'szpinak', amount: 2, unit: 'garście'},
+      {ingrName: 'ser mozzarella', amount: "50", unit: 'g'},
+      {ingrName: 'pomarańcza', amount: "1/2", unit: 'sztuki'},
+      {ingrName: 'oliwa', amount: "1", unit: 'łyżeczka'},
+      {ingrName: 'miód', amount: "1", unit: 'łyżeczka'},
+      {ingrName: 'ocet balsamiczny', amount: "1", unit: 'łyżeczka'},
+      {ingrName: 'orzechy włoskie', amount: "1", unit: 'łyżka', gram: 15}
+    ],
+    steps: [
+      "Do miseczki wrzucić szpinak, pokrojone w kosteczkę pomarańczę i mozzarellę.",
+      "Polać dressingiem z oliwy, miodu i octu balsamicznego, posypać orzechami."
+    ],
+    time: "5 minut",
+    notes: "",
+    imgSrc: ""
+  },
+  {
+    name: 'Kurczak z sosem czosnkowym i warzywami',
+    whichMeal: "obiad",
+    kcal: 420,
+    ingredients: [
+      {ingrName: 'filet z piersi kurczaka', amount: "1/2", unit: 'sztuki', gram: 150},
+      {ingrName: 'marynata'},
+      {ingrName: 'oliwa z oliwek', amount: "1", unit: 'łyżka', gram: 10},
+      {ingrName: 'fasolka szparagowa/warzywa na parze', amount: "200", unit: 'g'},
+      {ingrName: 'czosnek granulowany'},
+      {ingrName: 'sezam', amount: "1", unit: 'łyżka', gram: 10},
+      {ingrName: 'czosnek', amount: "1", unit: 'ząbek'},
+      {ingrName: 'jogurt naturalny, gęsty', amount: "2", unit: 'łyżki', gram: 40},
+      {ingrName: 'sól, pieprz, oregano'},
+      {ingrName: 'koperek', amount: "1", unit: 'łyżka'},
+    ],
+    steps: [
+      "Filet z kurczaka lekko rozbić, marynować w przyprawach z oliwą, ułożyć w głębokim wkładzie (można też ugrillować), a w górnej wkładce umieścić fasolkę szparagową/warzywa (można lekko osolić).",
+      "Do naczynia miksującego wlać 600g wody (lub bulionu). Gotować mięso i warzywa [ok. 20 min / ??? &deg;C / obr. wsteczne 1]",
+      "W miseczce wymieszać jogurt, czosnek przeciśnięty przez praskę i koperek (można pominąć), doprawić do smaku.",
+      "Mięso podawać z sosem i z fasolką szparagową lub warzywami wymieszanymi z czosnkiem granulowanym i posypanym uprażonym na suchej patelni sezamem."
+    ],
+    time: "35 minut + marynowanie",
+    notes: "Marynata - według uznania, np. sól, pieprz, papryka słodka, zioła prowansalskie lub przyprawa do grilla (bez e-dodatków)",
+    imgSrc: ""
+  },
+    {
+    name: 'Łosoś grillowany/gotowany na parze z tzatziki',
+    whichMeal: "obiad",
+    kcal: 410,
+    ingredients: [
+      {ingrName: 'ogórek', amount: 1, unit: 'sztuka', gram: 100},
+      {ingrName: 'czosnek', amount: 1, unit: 'ząbek'},
+      {ingrName: 'jogurt grecki', amount: 2, unit: 'łyżki', gram: 40},
+      {ingrName: 'erytrol', amount: "1/2", unit: 'łyżeczki'},
+      {ingrName: 'ocet winny/jabłkowy', amount: "1", unit: 'łyżeczka'},
+      {ingrName: 'łosoś, świeży', amount: 150, unit: 'g'},
+      {ingrName: 'sól, pieprz ziołowy', amount: 'do smaku'},
+      {ingrName: 'sok z cytryny', amount: "1", unit: 'łyżeczka'},
+      {ingrName: 'fasolka szparagowa/warzywa na parze', amount: 200, unit: 'g'},
+    ],
+    steps: [
+      "Do naczynia miksującego włożyć ogórek i odrobinę posolić, rozdrobnić [3 s / obr. 5]. Przełożyć do koszyczka i usunąć nadmiar wody dociskając dłońmi.",
+      "Do naczynia włożyć czosnek, rozdrobnić [3 s / obr. 7].",
+      "Dodać ogórki, jogurt grecki, erytrol i ocet. Wymieszać [10 s / obr. wsteczne 1,5], przełożyć do miseczki i wymieszać z ogórkami. Umyć naczynie miksujące.",
+      "Rybę przyprawić solą, pieprzem ziołowym i skropić sokiem z cytryny.",
+      "Ułożyć na górnym wkładzie (można też zapiekać w piekarniku). W dolnej przystawce umieścić warzywa (można lekko osolić). Do naczynia miksującego wlać 500g wody, nałożyć przystawki, gotować na parze [15-20 min / ??? / obr. 1].",
+      "Rybę podawać z sosem tzatziki i fasolką szparagową/warzywami (można doprawić solą, czosnkiem granulowanym)."
+    ],
+    time: "30 minut",
+    notes: "",
+    imgSrc: ""
+  },
+      {
+    name: 'Kanapki z śródziemnomorską pastą',
+    whichMeal: "kolacja",
+    kcal: 280,
+    ingredients: [
+      {ingrName: 'bazylia (świeża)', amount: 1, unit: 'garść'},
+      {ingrName: 'oliwki czarne', amount: 5, unit: 'sztuk', gram: 20},
+      {ingrName: 'pomidory suszone w oleju', amount: 6, unit: 'plastrów', gram: 40},
+      {ingrName: 'ser typu "Feta"', amount: "1/2", unit: 'kostki', gram: 100},
+      {ingrName: 'serek śmietankowy, naturalny (np. Almette)', amount: "2", unit: 'łyżki', gram: 50},
+      {ingrName: 'koncentrat pomidorowy 30%', amount: 1, unit: 'łyżeczka', gram: 15},
+      {ingrName: 'chleb żytni', amount: 2, unit: "kromki"},
+      {ingrName: 'warzywa (np. pomidor, ogórek, papryka, kiełki, szpinak/sałata)'},
+    ],
+    steps: [
+      "Do naczynia miksującego włożyć bazylię, rozdrobnić [3 s / obr. 8], zgarnąć na dno.",
+      "Dodać oliwki, rozdrobnić [10 s / obr. 4,5].",
+      "Dodać odsączone pomidory, ser feta, twarożek, koncentrat pomidorowy, rozdrobnić [8 s / obr. 8]. Gdyby pasta była zbyt gęsta, dodać 2-3 łyżki jogurtu.",
+      "Podawać na chlebie, z warzywami."
+    ],
+    time: "5 minut",
     notes: "",
     imgSrc: ""
   },
