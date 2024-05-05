@@ -53,7 +53,7 @@ const displayRecipes = () => {
     })
 
     let recipeTemplate = `
-    <div class="flex-50">
+    <div>
       <img src=${recipe.imgSrc || "placeholder.jpg"} />
       <div class="main-info">
         <h2>${recipe.name}</h2>
@@ -63,7 +63,7 @@ const displayRecipes = () => {
       </div>
     </div>
     <hr/>
-    <div class="scroll flex-50 details">
+    <div class="scroll details">
       ${
         recipe.notes ? `
         <div>

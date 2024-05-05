@@ -90,12 +90,6 @@ hr {
   gap: 1rem;
 }
 
-.flex-50 {
-  height: 50%;
-  /* position: relative;
-  top: 0; */
-}
-
 p.add-info {
   text-align: left !important;
 }
@@ -112,7 +106,7 @@ img {
 
 hr {
   color: whitesmoke;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .ingredients {
