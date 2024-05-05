@@ -35,7 +35,8 @@ const displayRecipes = () => {
       <li>
         ${ing.ingrName} 
         ${ing.amount ? " &rarr; " + ing.amount : ""}&nbsp;${ing.unit ? ing.unit : ""}
-        ${ing.gram ? "(" + ing.gram + "g)" : ""}
+        ${ing.gram ? "(" + ing.gram + " g)" : ""}
+        ${ing.ml ? "(" + ing.ml + " ml)" : ""}
       </li>`;
 
       ingredientsTemplate += temp;
@@ -52,9 +53,9 @@ const displayRecipes = () => {
     })
 
     let recipeTemplate = `
-    <div>
+    <div class="flex-50">
       <img src=${recipe.imgSrc || "placeholder.jpg"} />
-      <div>
+      <div class="main-info">
         <h2>${recipe.name}</h2>
         <p>${recipe.whichMeal}</p>
         <p>${recipe.kcal} kcal</p>
@@ -62,28 +63,30 @@ const displayRecipes = () => {
       </div>
     </div>
     <hr/>
-    ${
-      recipe.notes ? `
+    <div class="scroll flex-50 details">
+      ${
+        recipe.notes ? `
+        <div>
+          <h3>Dodatkowe informacje:</h3>
+          <p class="add-info">
+            ${recipe.notes}
+          </p>
+        </div>
+        ` : ""
+      }
       <div>
-        <h3>Dodatkowe informacje:</h3>
-        <p>
-          ${recipe.notes}
-        </p>
+        <h3>Składniki:</h3>
+        <ul class="ingredients">
+          ${ingredientsTemplate}
+        </ul>
       </div>
-      ` : ""
-    }
-    <div>
-      <h3>Składniki:</h3>
-      <ul class="ingredients">
-        ${ingredientsTemplate}
-      </ul>
-    </div>
-    <div>
-      <h3>Kroki:</h3>
-      <ol class="steps">
-        ${stepsTemplate}
-      </ol>
-    </div>
+      <div>
+        <h3>Kroki:</h3>
+        <ol class="steps">
+          ${stepsTemplate}
+        </ol>
+      </div>
+    </div
     `
     recipeLi.innerHTML = recipeTemplate;
     recipesUl.appendChild(recipeLi);

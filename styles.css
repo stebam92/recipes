@@ -6,7 +6,7 @@
 
 body {
   padding: 3rem 1rem;
-  background-color: #D9CAB3;
+  background-color: #eaddcb;
 }
 
 select {
@@ -22,6 +22,7 @@ select {
   border-bottom-right-radius: 5px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, .4);
   text-transform: uppercase;
+  outline: none;
 }
 
 #recipes-list {
@@ -34,25 +35,28 @@ select {
 }
 
 
-
+/* CARD */
 #recipes-list>li {
   position: relative;
   background-color: darkcyan;
   color: whitesmoke;
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
-  overflow-y: auto;
   /* margin-bottom: 3rem; */
-  padding: 20rem 2rem 2rem;
-  width: 24%;
+  /* padding: 20rem 1rem 10rem; */
+  /* width: 24%; */
   max-height: 900px;
   width: 400px;
   max-width: 95vw;
   /* max-width: 300px; */
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
 
   &>div {
-    margin-top: 1rem;
+    /* padding-top: 1rem; */
 
     & div>p {
       text-align: right;
@@ -60,8 +64,44 @@ select {
   }
 }
 
+.main-info {
+  padding: 1rem 2rem;
+}
+
+hr {
+  width: 85%;
+  display: block;
+  margin-inline: auto;
+}
+
+.scroll {
+  position: relative;
+  height: 100%;
+  /* width: 100%; */
+  /* overflow: hidden; */
+  overflow-y: auto;
+}
+
+.details {
+  padding: 1rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.flex-50 {
+  height: 50%;
+  /* position: relative;
+  top: 0; */
+}
+
+p.add-info {
+  text-align: left !important;
+}
+
 img {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 20rem;
@@ -89,12 +129,15 @@ html {
   scrollbar-color: rgb(1, 108, 108) rgb(42, 58, 58);
 }
 
+
+/* BEFORE ACCESS */
 #popup {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: fixed;
+  text-align: center;
   top: 0;
   bottom: 0;
   left: 0;
