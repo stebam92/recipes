@@ -44,7 +44,7 @@ const recipes = [
     ],
     time: "5 minut",
     notes: "Parówki dobrej jakości, z wysoką zawartością mięsa (np. w Lidlu z serii PURE lub w Biedronce z serii NATUR).",
-    imgSrc: ""
+    imgSrc: "./images/parowki_z_chrzanem.jpg"
   },
   {
     name: 'Bakaliowy deser z jogurtem i madarynką',
@@ -68,7 +68,7 @@ const recipes = [
     imgSrc: "./images/bakaliowy_deser.jpg"
   },
   {
-    name: 'Kurczak szarpany w bułce z tostera',
+    name: 'Kurczak szarpany w bułce',
     whichMeal: "obiad",
     kcal: 400,
     ingredients: [
@@ -98,7 +98,7 @@ const recipes = [
     ],
     time: "40 minut",
     notes: "2 porcje",
-    imgSrc: ""
+    imgSrc: "./images/kurczak_szarpany.jpg"
   },
   {
     name: 'Zupa krem z pomidorów z mozzarellą',
@@ -122,7 +122,7 @@ const recipes = [
     ],
     time: "20 minut",
     notes: "2 porcje",
-    imgSrc: ""
+    imgSrc: "./images/zupa_krem_z_pomidorow.jpg"
   },
   {
     name: 'FIT pasta jajeczna',

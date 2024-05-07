@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +8,8 @@
 
 body {
   padding: 3rem 1rem;
-  background-color: #eaddcb;
+  background-color: #FFE1A8;
+  font-family: "Montserrat", sans-serif;
 }
 
 select {
@@ -16,7 +19,7 @@ select {
   top: 0;
   left: 0;
   padding: 0.5rem 0rem .5rem 1rem;
-  background-color: rgb(1, 106, 106);
+  background-color: #1D1A31;
   border: none;
   color: whitesmoke;
   border-bottom-right-radius: 5px;
@@ -38,7 +41,8 @@ select {
 /* CARD */
 #recipes-list>li {
   position: relative;
-  background-color: darkcyan;
+  background-color: #1D1A31;
+  box-shadow: 5px 5px 10px 5px rgba(29, 26, 49, .5);
   color: whitesmoke;
   border-radius: 5px;
   overflow: hidden;
@@ -47,11 +51,13 @@ select {
   /* width: 24%; */
   max-height: 900px;
   width: 400px;
-  max-width: 95vw;
+  max-width: 80vw;
   /* max-width: 300px; */
   /* display: inline-block; */
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
+  line-height: 1.5;
   /* align-items: flex-start; */
   /* justify-content: flex-start; */
 
@@ -66,6 +72,7 @@ select {
 
 .main-info {
   padding: 1rem 2rem;
+  font-size: 1rem;
 }
 
 hr {
@@ -110,7 +117,7 @@ hr {
 }
 
 .ingredients {
-  list-style-type: square;
+  list-style-type: circle;
   padding-left: 1rem;
 }
 
@@ -120,7 +127,27 @@ hr {
 }
 
 html {
-  scrollbar-color: rgb(1, 108, 108) rgb(42, 58, 58);
+  scrollbar-color: #FFE1A8 #1D1A31;
+}
+
+@media screen and (max-width: 600px) {
+  #recipes-list>li {
+    font-size: .8rem;
+    box-shadow: 5px 5px 10px 5px rgba(29, 26, 49, .4);
+  }
+
+  .main-info {
+    padding: .5rem 1rem;
+    font-size: .7rem;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  img {
+    height: 15rem;
+  }
 }
 
 
@@ -132,11 +159,12 @@ html {
   justify-content: center;
   position: fixed;
   text-align: center;
+  color: whitesmoke;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: aquamarine;
+  background-color: #1D1A31;
   z-index: 100;
 
   form {
@@ -145,11 +173,11 @@ html {
     align-items: stretch;
     justify-content: center;
     border-radius: 5px;
-    border: 2px solid darkcyan;
+    border: 2px solid #1D1A31;
   }
 
   input {
-    padding: .5rem 1rem;
+    padding: 1rem 1.5rem;
     border-radius: 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -158,20 +186,22 @@ html {
     outline: none;
 
     &:focus {
-      background-color: antiquewhite;
+      background-color: #d4c0c3;
     }
   }
 
   button {
     border: none;
     height: 100%;
-    width: 2rem;
+    width: 3rem;
     /* border: 2px solid darkcyan; */
-    background-color: darkcyan;
-    color: white;
+    background-color: #F08CAE;
+    color: #1D1A31;
+    font-size: 1.5rem;
+    font-weight: 900;
     cursor: pointer;
-    /* border-top-left-radius: 5px; */
-    /* border-bottom-left-radius: 5px; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 
     /* line-height: 2rem; */
     /* font-size: 2rem; */
