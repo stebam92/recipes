@@ -51,7 +51,7 @@ select {
   /* width: 24%; */
   max-height: 900px;
   width: 400px;
-  max-width: 80vw;
+  max-width: 90vw;
   /* max-width: 300px; */
   /* display: inline-block; */
   font-size: 1rem;
@@ -147,6 +147,10 @@ html {
 
   img {
     height: 15rem;
+  }
+
+  .details {
+    padding: 1rem 1rem 2rem;
   }
 }
 
