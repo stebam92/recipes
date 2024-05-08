@@ -52,14 +52,40 @@ const displayRecipes = () => {
       stepsTemplate += temp;
     })
 
+    let mom_color;
+    let my_color;
+    switch(recipe.mom) {
+      case 0: mom_color = "bad"; break;
+      case 1: mom_color = "ok"; break;
+      case 2: mom_color = "good"; break;
+      default: mom_color = "no-data";        
+    }
+     switch(recipe.me) {
+      case 0: my_color = "bad"; break;
+      case 1: my_color = "ok"; break;
+      case 2: my_color = "good"; break;
+      default: my_color = "no-data";        
+    }
+
     let recipeTemplate = `
     <div>
       <img src=${recipe.imgSrc || "placeholder.jpg"} />
       <div class="main-info">
-        <h2>${recipe.name}</h2>
-        <p>${recipe.whichMeal}</p>
-        <p>${recipe.kcal} kcal</p>
-        <p>${recipe.time}</p>
+        <div>
+          <h2>${recipe.name}</h2>
+        </div>
+        <div class="main-second">
+          <div>
+            <div class="circle ${mom_color}">R</div>
+            <div class="circle ${my_color}">M</div>
+          </div>
+          <div>
+            <p>${recipe.whichMeal}</p>
+            <p>${recipe.kcal} kcal</p>
+            <p>${recipe.time}</p>
+          </div>
+        </div>
+        
       </div>
     </div>
     <hr/>

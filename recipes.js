@@ -3,6 +3,8 @@ const recipes = [
     name: 'Chleb żytni 2000 na drożdżach',
     whichMeal: "inne",
     kcal: 1786,
+    mom: 1,
+    me: 1,
     ingredients: [
       {ingrName: 'mąka żytnia razowa, typ 2000', amount: 500, unit: 'g'},
       {ingrName: 'sól', amount: "1,5", unit: 'łyżeczki'},
@@ -30,6 +32,8 @@ const recipes = [
     name: 'Parówki z chrzanem, sałatka z ogórka kiszonego i pomidora',
     whichMeal: "śniadanie",
     kcal: 360,
+    mom: 1,
+    me: 0,
     ingredients: [
       {ingrName: 'parówki', amount: 2, unit: 'sztuki', gram: 100},
       {ingrName: 'chrzan tarty / musztarda', amount: 2, unit: 'łyżeczki'},
@@ -50,6 +54,8 @@ const recipes = [
     name: 'Bakaliowy deser z jogurtem i madarynką',
     whichMeal: "drugie śniadanie",
     kcal: 280,
+    mom: 1,
+    me: 1,
     ingredients: [
       {ingrName: 'jogurt naturalny', amount: 150, unit: 'g'},
       {ingrName: 'mandarynka', amount: 1, unit: 'sztuka'},
@@ -71,6 +77,8 @@ const recipes = [
     name: 'Kurczak szarpany w bułce',
     whichMeal: "obiad",
     kcal: 400,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'filet z piersi kurczaka', amount: 200, unit: 'g'},
       {ingrName: 'natka pietruszki / kolendra', amount: "1-2", unit: 'gałązki'},
@@ -104,6 +112,8 @@ const recipes = [
     name: 'Zupa krem z pomidorów z mozzarellą',
     whichMeal: "kolacja",
     kcal: 350,
+    mom: 0,
+    me: 1,
     ingredients: [
       {ingrName: 'cebula', amount: 1, unit: 'sztuka'},
       {ingrName: 'czosnek', amount: "1-2", unit: 'ząbki'},
@@ -128,6 +138,8 @@ const recipes = [
     name: 'FIT pasta jajeczna',
     whichMeal: "śniadanie",
     kcal: 380,
+    mom: null,
+    me: 2,
     ingredients: [
       {ingrName: 'jajka', amount: 3, unit: 'sztuki'},
       {ingrName: 'papryka czerwona', amount: "1/2", unit: 'sztuki'},
@@ -153,12 +165,14 @@ const recipes = [
     ],
     time: "20 minut",
     notes: "2 porcje",
-    imgSrc: ""
+    imgSrc: "./images/fit_pasta_jajeczna.jpg"
   },
   {
     name: 'Czekoladowe placki z malinami',
     whichMeal: "drugie śniadanie",
     kcal: 330,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'jogurt naturalny, gęsty', amount: 140, unit: 'g'},
       {ingrName: 'jajko', amount: 1, unit: 'sztuka'},
@@ -180,13 +194,15 @@ const recipes = [
       "Podawać na zimno lub na ciepło."
     ],
     time: "25 minut",
-    notes: "",
-    imgSrc: ""
+    notes: "2 porcje",
+    imgSrc: "./images/czekoladowe_placki_z_malinami.jpg"
   },
   {
     name: 'Gulasz z kaszą',
     whichMeal: "obiad",
     kcal: 430,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'wieprzowina (schab surowy)', amount: 500, unit: 'g'},
       {ingrName: 'papryka słodka', amount: 1, unit: 'łyżeczka'},
@@ -225,6 +241,8 @@ const recipes = [
     name: 'Sałatka z grillowanymi warzywami',
     whichMeal: "kolacja",
     kcal: 320,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'cebula czerwona', amount: "1/2", unit: 'sztuki'},
       {ingrName: 'cukinia', amount: "ok. 100", unit: 'g'},
@@ -253,6 +271,8 @@ const recipes = [
     name: 'Sos winegret',
     whichMeal: "inne",
     kcal: "???",
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'czosnek', amount: 1, unit: 'ząbek'},
       {ingrName: 'oliwa z oliwek', amount: 35, unit: 'g'},
@@ -274,6 +294,8 @@ const recipes = [
     name: 'Owsianka BOUNTY',
     whichMeal: "śniadanie",
     kcal: 390,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'płatki owsiane', amount: 4, unit: 'łyżki', gram: 35},
       {ingrName: 'woda', amount: 220, unit: 'g'},
@@ -299,6 +321,8 @@ const recipes = [
     name: 'Sałatka z parmezanem',
     whichMeal: "drugie śniadanie",
     kcal: 290,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'mix sałat', amount: 2, unit: 'garście'},
       {ingrName: 'suszone pomidory', amount: 2, unit: 'plastry', gram: 15},
@@ -320,6 +344,8 @@ const recipes = [
     name: 'Pstrąg z kapustą kiszoną',
     whichMeal: "obiad",
     kcal: 400,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'pstrąg, filet', amount: 200, unit: 'g'},
       {ingrName: 'sól, pieprz, rozmaryn'},
@@ -346,6 +372,8 @@ const recipes = [
     name: 'Makaron ze szpinakiem i serem Feta',
     whichMeal: "kolacja",
     kcal: 360,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'makaron pełnoziarnisty', amount: "1/2", unit: 'szklanki', gram: 60},
       {ingrName: 'oliwa', amount: 1, unit: 'łyżeczka'},
@@ -369,6 +397,8 @@ const recipes = [
     name: 'Omletost',
     whichMeal: "śniadanie",
     kcal: 430,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'jajko', amount: 1, unit: 'sztuka'},
       {ingrName: 'jogurt grecki', amount: 1, unit: 'łyżka', gram: 20},
@@ -400,6 +430,8 @@ const recipes = [
     name: 'Puszysty FIT sernik',
     whichMeal: "drugie śniadanie",
     kcal: 260,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'jajko', amount: 2, unit: 'sztuki'},
       {ingrName: 'twaróg półtłusty', amount: 200, unit: 'g'},
@@ -426,6 +458,8 @@ const recipes = [
     name: 'Pulpeciki w sosie kokosowym i marchewka z groszkiem',
     whichMeal: "obiad",
     kcal: 440,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'koperek', amount: 1, unit: 'czubata łyżka', gram: 10},
       {ingrName: 'indyk, mięso mielone', amount: 200, unit: 'g'},
@@ -459,6 +493,8 @@ const recipes = [
     name: 'Tortilla z warzywami',
     whichMeal: "kolacja",
     kcal: 300,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'tortilla wieloziarnista', amount: 1, unit: 'sztuka'},
       {ingrName: 'sałata lodowa/mix sałat', amount: 1, unit: 'garść'},
@@ -484,6 +520,8 @@ const recipes = [
     name: 'Pomarańczowa owsianka z bakaliami i cynamonem',
     whichMeal: "śniadanie",
     kcal: 400,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'morele suszone', amount: 25, unit: 'g'},
       {ingrName: 'jabłko', amount: "1/2", unit: 'sztuki', gram: 90},
@@ -508,6 +546,8 @@ const recipes = [
     name: 'Sałatka z serem pleśniowym i granatem',
     whichMeal: "drugie śniadanie",
     kcal: 290,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'rukola/mix sałat', amount: 2, unit: 'garście'},
       {ingrName: 'ser pleśniowy gorgonzola/lazur błękitny', amount: 30, unit: 'g'},
@@ -536,6 +576,8 @@ const recipes = [
     name: 'Leczo',
     whichMeal: "obiad",
     kcal: 370,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'boczek wędzony', amount: 60, unit: 'g'},
       {ingrName: 'oliwa z oliwek', amount: 2, unit: 'łyżki', gram: 20},
@@ -567,6 +609,8 @@ const recipes = [
     name: 'Kanapki z miodem, truskawkami i twarożkiem',
     whichMeal: "kolacja",
     kcal: 330,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'chleb żytni', amount: 2, unit: 'kromki'},
       {ingrName: 'twaróg półtłusty', amount: 50, unit: 'g'},
@@ -579,6 +623,214 @@ const recipes = [
     ],
     time: "5 minut",
     notes: "Chleb można podgrzać w tosterze",
+    imgSrc: ""
+  },
+  {
+    name: 'Grillowane halloumi z warzywami',
+    whichMeal: "śniadanie",
+    kcal: 400,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'ser cypryjski "Halloumi"', amount: 100, unit: 'g'},
+      {ingrName: 'ogórek kiszony', amount: 1, unit: 'sztuka'},
+      {ingrName: 'pomidor', amount: 1, unit: 'sztuka'},
+      {ingrName: 'mix sałat/rukola', amount: 1, unit: 'garść'},
+      {ingrName: 'rzodkiewki', amount: 2, unit: 'sztuki'},
+      {ingrName: 'sos winegret', amount: 1, unit: 'łyżka'},
+    ],
+    steps: [
+      "Ser ugrillować/usmażyć z dwóch stron na suchej patelni (mały ogień), nie odrywaj na siłę - poczekaj, aż ser się zarumieni i lekko odejdzie od patelni (można zrobić to na patelni grillowej, grillu elektrycznym lub gazowym).",
+      "Podawać z surówką ze świeżych warzyw polanych sosem."
+    ],
+    time: "15 minut",
+    notes: "",
+    imgSrc: ""
+  },
+  {
+    name: 'Koktajl bananowy z twarogiem',
+    whichMeal: "drugie śniadanie",
+    kcal: 290,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'banan', amount: 1, unit: 'sztuka'},
+      {ingrName: 'jogurt naturalny', amount: 200, unit: 'g'},
+      {ingrName: 'migdały (płatki)', amount: 2, unit: 'łyżki', gram: 30},
+      {ingrName: 'miód', amount: 1, unit: 'łyżka', gram: 20},
+      {ingrName: 'twaróg półtłusty', amount: "1/2", unit: 'kostki', gram: 100},
+    ],
+    steps: [
+      "Wszystkie składniki umieścić w naczyniu miksującym, zmiksować [45 s / obr. 10]."
+    ],
+    time: "5 minut",
+    notes: "2 porcje",
+    imgSrc: ""
+  },
+  {
+    name: 'Wege burger z fasoli',
+    whichMeal: "obiad",
+    kcal: 410,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'czosnek', amount: 1, unit: 'mały ząbek'},
+      {ingrName: 'cebula', amount: "1/2", unit: 'sztuki', gram: "50-60"},
+      {ingrName: 'płatki owsiane', amount: 25, unit: 'g'},
+      {ingrName: 'fasola czerwona/czarna z puszki', amount: 120, unit: 'g'},
+      {ingrName: 'chili mielone', amount: 1, unit: 'szczypta'},
+      {ingrName: 'kmin rzymski', amount: "1/2", unit: 'łyżeczki'},
+      {ingrName: 'sól', amount: "1/2", unit: 'łyżeczki'},
+      {ingrName: 'pieprz', amount: 1, unit: 'szczypta'},
+      {ingrName: 'oliwa z oliwek', amount: 1, unit: 'łyżka', gram: 10},
+      {ingrName: 'bułka grahamka/pełnoziarnista', amount: 2, unit: 'sztuki'},
+      {ingrName: 'sałata (np. rzymska/lodowa)'},
+      {ingrName: 'czerwona cebula'},
+      {ingrName: 'ogórek kiszony'},
+      {ingrName: 'pomidor', amount: 2, unit: 'plastry'},
+      {ingrName: 'ketchup'},
+    ],
+    steps: [
+      "W naczyniu miksującym umieścić czosnek, cebulę oraz płatki owsiane, rozdrobnić [5 s / obr. 5]. Zgarnąć kopystką. Powtórzyć.",
+      "Dodać fasolę, chili, kmin rzymski, sól i pieprz. Wymieszać [5 s / obr. wsteczne 4].",
+      "Wilgotnymi dłońmi uformować 2 kotlety i wstawić do lodówki na 0,5-1 godzinę.",
+      "Smażyć na oliwie, na średnim ogniu z obu stron.",
+      "Bułkę można podpiec w tosterze lub w piekarniku (do zarumienienia).",
+      "Na bułce ułożyć sałatę, burgera, dodać krążki czerwonej cebuli, ogórka kiszonego, pomidora i polać ketchupem."
+    ],
+    time: "25 minut + 0,5-1h chłodzenie",
+    notes: "2 porcje",
+    imgSrc: ""
+  },
+  {
+    name: 'Pieczona owsianka z malinami/truskawkami',
+    whichMeal: "kolacja",
+    kcal: 350,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'jajko', amount: 1, unit: 'sztuka'},
+      {ingrName: 'jogurt naturalny', amount: 1, unit: 'łyżka', gram: 20},
+      {ingrName: 'maliny/truskawki (mrożone)', amount: 250, unit: 'g'},
+      {ingrName: 'granat', amount: "1/4", unit: 'sztuki'},
+      {ingrName: 'napój roślinny', amount: 80, unit: 'g'},
+      {ingrName: 'płatki owsiane', amount: 80, unit: 'g'},
+      {ingrName: 'miód', amount: 30, unit: 'g'},
+      {ingrName: 'płatki migdałowe', amount: 2, unit: 'łyżki', gram: 20},
+    ],
+    steps: [
+      "Wszystkie składniki wymieszać [15 s / obr. wsteczne 3], przełożyć do dwóch kokilek, posypać płatkami migdałów.",
+      "Zapiekać 30-40 minut w 180&deg;C."
+    ],
+    time: "35-45 minut",
+    notes: "2 porcje <br/> Masę można przygotować wcześniej.",
+    imgSrc: ""
+  },
+  {
+    name: 'Łosoś wędzony z sosem musztardowo-miodowym',
+    whichMeal: "śniadanie",
+    kcal: 380,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'musztarda (np. DIJON)', amount: 3, unit: 'łyżeczki', gram: 30},
+      {ingrName: 'miód', amount: 1, unit: 'łyżeczka', gram: 8},
+      {ingrName: 'sok z cytryny', amount: 'kilka', unit: 'kropel'},
+      {ingrName: 'oliwa z oliwek', amount: 1, unit: 'łyżka'},
+      {ingrName: 'łosoś wędzony na zimno (lub inna wędzona ryba, np. makrela, pstrąg - ok. 160 kcal)', amount: 100, unit: 'g'},
+      {ingrName: 'ogórek zielony/kiszony'},
+      {ingrName: 'papryka czerwona', amount: "kawałek"},
+      {ingrName: 'pomidorki koktajlowe', amount: 5, unit: 'sztuk'},
+      {ingrName: 'rukola', amount: 1, unit: 'garść'},
+      {ingrName: 'granat', amount: "1/4", unit: 'sztuki'},
+    ],
+    steps: [
+      "W miseczce wymieszać musztardę, miód i sok z cytryny. Następnie intensywnie mieszając, dodawać powoli oliwę.",
+      "Na talerzu ułożyć rukolę, wkroić ogórka i ułożyć pomidorki oraz kawałki ryby.",
+      "Sałatkę polać sosem, posypać granatem."
+    ],
+    time: "10 minut",
+    notes: "",
+    imgSrc: ""
+  },
+  {
+    name: 'Puszyste placuszki z owocami',
+    whichMeal: "drugie śniadanie",
+    kcal: 290,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'jajko', amount: 1, unit: 'sztuka'},
+      {ingrName: 'mąka ryżowa', amount: 1, unit: 'łyżka', gram: 15},
+      {ingrName: 'olej kokosowy', amount: 1, unit: 'łyżeczka', gram: 5},
+      {ingrName: 'syrop klonowy', amount: 2, unit: 'łyżki', gram: 20},
+      {ingrName: 'nektarynka (lub inne owoce)', amount: 1, unit: 'sztuka', gram: "100-150"},
+    ],
+    steps: [
+      "Założyć motylek, do suchego naczynia miksującego wlać białko, ubijać ok. [2-3 min / obr. 3,5] lub do momentu, aż piana będzie sztywna.",
+      "Zdjąć motylek, dodać żółtko i mąkę, wymieszać [10 s / obr. 3].",
+      "Rozgrzać patelnię i dodać niewielką ilość oleju kokosowego. Uformować łyżką placuszki. Smażyć na małym ogniu.",
+      "Placuszki polać syropem klonowym, podawać z owocami."
+    ],
+    time: "20 minut",
+    notes: "Mąkę ryżową można otrzymać ze zmielenia ryżu [30-60 s / obr. 10].",
+    imgSrc: ""
+  },
+  {
+    name: 'Śledzie "w śmietanie"',
+    whichMeal: "obiad",
+    kcal: 420,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'śledź w oleju', amount: 200, unit: 'g (po odsączeniu)'},
+      {ingrName: 'cebula', amount: "1/2", unit: 'sztuki'},
+      {ingrName: 'jabłko', amount: "2/3", unit: 'sztuki', gram: 100},
+      {ingrName: 'jogurt naturalny, gęsty', amount: 4, unit: 'łyżki', gram: "80-100"},
+      {ingrName: 'pieprz, papryka'},
+      {ingrName: 'ziemniaki', amount: 4, unit: 'sztuki', gram: 360},
+      {ingrName: 'koperek'},
+      {ingrName: 'mleko do moczenia'},
+    ],
+    steps: [
+      "Śledzie odsączyć z zalewy (można umyć, moczyć ok. 30 minut w mleku) i pokroić na kawałeczki.",
+      "Cebulę rozdrobnić [3-4 s / obr. 5] lub pokroić w drobną kosteczkę, aby nie zrobiła się gorzka. Przełożyć do miski.",
+      "Jabłko rozdrobnić [4-6 s / obr. 4], przełożyć do cebuli.",
+      "Dodać śledzie, wymieszać z jogurtem, pieprzem i papryką.",
+      "Wstawić do lodówki na min. 2h.",
+      "Podawać z ziemniakami posypanymi koperkiem."
+    ],
+    time: "10 minut + 30 minut moczenie + 2h chłodzenie",
+    notes: "2 porcje",
+    imgSrc: ""
+  },
+
+  {
+    name: 'Cukinia faszerowana kaszą jaglaną z papryką i ogórkiem',
+    whichMeal: "kolacja",
+    kcal: 330,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'kasza jaglana', amount: "1/4", unit: 'szklanki', gram: 40},
+      {ingrName: 'natka pietruszki', amount: "dużo"},
+      {ingrName: 'papryka czerwona', amount: "1/3", unit: 'sztuki', gram: 100},
+      {ingrName: 'ogórek kiszony/konserwowy', amount: 1, unit: 'sztuka', gram: 60},
+      {ingrName: 'oliwa z oliwek', amount: 1, unit: 'łyżeczka', gram: 5},
+      {ingrName: 'cukinia', amount: 1, unit: 'mała sztuka', gram: 250},
+      {ingrName: 'parmezan tarty', amount: 1, unit: 'łyżka', gram: 12},
+      {ingrName: 'sól, pieprz'},
+    ],
+    steps: [
+      "Kaszę ugotować w połowie szklanki wody.",
+      "Natkę rozdrobnić [3 s / obr. 8]. dodać paprykę i rozdrobnić [4 s / obr. 4] (lub pokroić w kosteczkę nożem), przełożyć do miseczki.",
+      "Do naczynia miksującego włożyć ogórek, rozdrobnić [4-6 s / obr. 5] lub pokroić nożem.",
+      "Dodać oliwę, kaszę, rozdrobnioną paprykę, sól i pieprz. Wymieszać [10 s / obr. wsteczne 2].",
+      "Cukinię przekroić na pół, wydrążyć miąższ i nadziać farszem.",
+      "Posypać serem. Zapiekać w piekarniku w 180&deg;C przez 20 minut (lub do czasu aż cukinia zmięknie)."
+    ],
+    time: "40 minut",
+    notes: "",
     imgSrc: ""
   },
 
@@ -595,6 +847,8 @@ const recipes = [
     name: 'Owsianka z owocami',
     whichMeal: "śniadanie",
     kcal: 400,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'jabłko (małe)', amount: 1, unit: 'sztuka', gram: 150},
       {ingrName: 'woda', amount: "2/3", unit: 'szklanki', gram: 180},
@@ -620,6 +874,8 @@ const recipes = [
     name: 'Sałatka z pomarańczą, mozzarellą i orzechami włoskimi',
     whichMeal: "drugie śniadanie",
     kcal: 330,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'szpinak', amount: 2, unit: 'garście'},
       {ingrName: 'ser mozzarella', amount: "50", unit: 'g'},
@@ -641,6 +897,8 @@ const recipes = [
     name: 'Kurczak z sosem czosnkowym i warzywami',
     whichMeal: "obiad",
     kcal: 420,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'filet z piersi kurczaka', amount: "1/2", unit: 'sztuki', gram: 150},
       {ingrName: 'marynata'},
@@ -667,6 +925,8 @@ const recipes = [
     name: 'Łosoś grillowany/gotowany na parze z tzatziki',
     whichMeal: "obiad",
     kcal: 410,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'ogórek', amount: 1, unit: 'sztuka', gram: 100},
       {ingrName: 'czosnek', amount: 1, unit: 'ząbek'},
@@ -694,6 +954,8 @@ const recipes = [
     name: 'Kanapki z śródziemnomorską pastą',
     whichMeal: "kolacja",
     kcal: 280,
+    mom: null,
+    me: null,
     ingredients: [
       {ingrName: 'bazylia (świeża)', amount: 1, unit: 'garść'},
       {ingrName: 'oliwki czarne', amount: 5, unit: 'sztuk', gram: 20},
