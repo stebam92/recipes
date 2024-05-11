@@ -397,8 +397,8 @@ const recipes = [
     name: 'Omletost',
     whichMeal: "śniadanie",
     kcal: 430,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'jajko', amount: 1, unit: 'sztuka'},
       {ingrName: 'jogurt grecki', amount: 1, unit: 'łyżka', gram: 20},
@@ -424,7 +424,7 @@ const recipes = [
     ],
     time: "25 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/omletost.jpg"
   },
   {
     name: 'Puszysty FIT sernik',
