@@ -32,8 +32,8 @@ const recipes = [
     name: 'Parówki z chrzanem, sałatka z ogórka kiszonego i pomidora',
     whichMeal: "śniadanie",
     kcal: 360,
-    mom: 1,
-    me: 0,
+    mom: 2,
+    me: 1,
     ingredients: [
       {ingrName: 'parówki', amount: 2, unit: 'sztuki', gram: 100},
       {ingrName: 'chrzan tarty / musztarda', amount: 2, unit: 'łyżeczki'},
@@ -51,7 +51,7 @@ const recipes = [
     imgSrc: "./images/parowki_z_chrzanem.jpg"
   },
   {
-    name: 'Bakaliowy deser z jogurtem i madarynką',
+    name: 'Bakaliowy deser z jogurtem i mandarynką',
     whichMeal: "drugie śniadanie",
     kcal: 280,
     mom: 1,
@@ -138,7 +138,7 @@ const recipes = [
     name: 'FIT pasta jajeczna',
     whichMeal: "śniadanie",
     kcal: 380,
-    mom: null,
+    mom: 2,
     me: 2,
     ingredients: [
       {ingrName: 'jajka', amount: 3, unit: 'sztuki'},
@@ -171,8 +171,8 @@ const recipes = [
     name: 'Czekoladowe placki z malinami',
     whichMeal: "drugie śniadanie",
     kcal: 330,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'jogurt naturalny, gęsty', amount: 140, unit: 'g'},
       {ingrName: 'jajko', amount: 1, unit: 'sztuka'},
@@ -201,8 +201,8 @@ const recipes = [
     name: 'Gulasz z kaszą',
     whichMeal: "obiad",
     kcal: 430,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'wieprzowina (schab surowy)', amount: 500, unit: 'g'},
       {ingrName: 'papryka słodka', amount: 1, unit: 'łyżeczka'},
@@ -235,7 +235,7 @@ const recipes = [
     ],
     time: "1 godzina 20 minut",
     notes: "4 porcje <br/> Kaszy nie należy gotować w woreczku!!!!",
-    imgSrc: ""
+    imgSrc: "./images/gulasz_z_kasza.jpg"
   },
   {
     name: 'Sałatka z grillowanymi warzywami',
@@ -288,14 +288,14 @@ const recipes = [
     ],
     time: "3 minuty",
     notes: "5 porcji (na 1 porcję przypada ok. 1,5 - 2 łyżek sosu) <br/> Można przyrządzić z podwójnej porcji i przechowywać w lodówce.",
-    imgSrc: ""
+    imgSrc: "./images/sos_winegret.jpg"
   },
   {
     name: 'Owsianka BOUNTY',
     whichMeal: "śniadanie",
     kcal: 390,
-    mom: null,
-    me: null,
+    mom: 0,
+    me: 1,
     ingredients: [
       {ingrName: 'płatki owsiane', amount: 4, unit: 'łyżki', gram: 35},
       {ingrName: 'woda', amount: 220, unit: 'g'},
@@ -315,14 +315,14 @@ const recipes = [
     ],
     time: "25 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/owsianka_bounty.jpg"
   },
   {
     name: 'Sałatka z parmezanem',
     whichMeal: "drugie śniadanie",
     kcal: 290,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'mix sałat', amount: 2, unit: 'garście'},
       {ingrName: 'suszone pomidory', amount: 2, unit: 'plastry', gram: 15},
@@ -338,14 +338,14 @@ const recipes = [
     ],
     time: "5 minut",
     notes: "Sos winegret - w innym przepisie.",
-    imgSrc: ""
+    imgSrc: "./images/salatka_z_parmezanem.jpg"
   },
   {
     name: 'Pstrąg z kapustą kiszoną',
     whichMeal: "obiad",
     kcal: 400,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'pstrąg, filet', amount: 200, unit: 'g'},
       {ingrName: 'sól, pieprz, rozmaryn'},
@@ -366,14 +366,14 @@ const recipes = [
     ],
     time: "30 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/pstrag_z_kapusta_kiszona.jpg"
   },
   {
     name: 'Makaron ze szpinakiem i serem Feta',
     whichMeal: "kolacja",
     kcal: 360,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'makaron pełnoziarnisty', amount: "1/2", unit: 'szklanki', gram: 60},
       {ingrName: 'oliwa', amount: 1, unit: 'łyżeczka'},
@@ -391,7 +391,7 @@ const recipes = [
     ],
     time: "20 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/makaron_ze_szpinakiem.jpg"
   },
   {
     name: 'Omletost',
