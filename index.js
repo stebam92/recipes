@@ -68,51 +68,51 @@ const displayRecipes = () => {
     }
 
     let recipeTemplate = `
-    <div>
-      <img src=${recipe.imgSrc || "placeholder.jpg"} />
-      <div class="main-info">
-        <div>
-          <h2>${recipe.name}</h2>
-        </div>
-        <div class="main-second">
-          <div>
-            <div class="circle ${mom_color}">R</div>
-            <div class="circle ${my_color}">M</div>
-          </div>
-          <div>
-            <p>${recipe.whichMeal}</p>
-            <p>${recipe.kcal} kcal</p>
-            <p>${recipe.time}</p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <hr/>
-    <div class="scroll details">
-      ${
-        recipe.notes ? `
-        <div>
-          <h3>Dodatkowe informacje:</h3>
-          <p class="add-info">
-            ${recipe.notes}
-          </p>
-        </div>
-        ` : ""
-      }
       <div>
-        <h3>Składniki:</h3>
-        <ul class="ingredients">
-          ${ingredientsTemplate}
-        </ul>
+        <img src=${recipe.imgSrc || "placeholder.jpg"} />
+        <div class="main-info">
+          <div>
+            <h2>${recipe.name}</h2>
+          </div>
+          <div class="main-second">
+            <div>
+              <div class="circle ${mom_color}">R</div>
+              <div class="circle ${my_color}">M</div>
+            </div>
+            <div>
+              <p>${recipe.whichMeal}</p>
+              <p>${recipe.kcal} kcal</p>
+              <p>${recipe.time}</p>
+            </div>
+          </div>
+          
+        </div>
       </div>
-      <div>
-        <h3>Kroki:</h3>
-        <ol class="steps">
-          ${stepsTemplate}
-        </ol>
-      </div>
-    </div
+      <hr/>
+      <div class="scroll details">
+        ${
+          recipe.notes ? `
+          <div>
+            <h3>Dodatkowe informacje:</h3>
+            <p class="add-info">
+              ${recipe.notes}
+            </p>
+          </div>
+          ` : ""
+        }
+        <div>
+          <h3>Składniki:</h3>
+          <ul class="ingredients">
+            ${ingredientsTemplate}
+          </ul>
+        </div>
+        <div>
+          <h3>Kroki:</h3>
+          <ol class="steps">
+            ${stepsTemplate}
+          </ol>
+        </div>
+      </div
     `
     recipeLi.innerHTML = recipeTemplate;
     recipesUl.appendChild(recipeLi);
@@ -139,5 +139,12 @@ formPassword.addEventListener("submit", e => {
     passwordInput.value = "";
   }
 })
+
+// const toggleDetails = card => {
+//   const hr = card.children[1];
+//   const details = card.children[2];
+//   // hr.classList.toggle("hide");
+//   // details.classList.toggle("hide");
+// }
 
 // displayRecipes();
