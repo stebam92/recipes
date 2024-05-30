@@ -31,13 +31,18 @@ const displayRecipes = () => {
 
     let ingredientsTemplate = "";
     recipe.ingredients.forEach(ing => {
-      let temp = `
-      <li>
-        ${ing.ingrName} 
-        ${ing.amount ? " &rarr; " + ing.amount : ""}&nbsp;${ing.unit ? ing.unit : ""}
-        ${ing.gram ? "(" + ing.gram + " g)" : ""}
-        ${ing.ml ? "(" + ing.ml + " ml)" : ""}
-      </li>`;
+      let temp;
+      if (ing.group) {
+        temp = `<h4>${ing.group}</h4>`;
+      } else {
+        temp = `
+        <li>
+          ${ing.ingrName} 
+          ${ing.amount ? " &rarr; " + ing.amount : ""}&nbsp;${ing.unit ? ing.unit : ""}
+          ${ing.gram ? "(" + ing.gram + " g)" : ""}
+          ${ing.ml ? "(" + ing.ml + " ml)" : ""}
+        </li>`;
+      }
 
       ingredientsTemplate += temp;
     })

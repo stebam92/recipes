@@ -241,8 +241,8 @@ const recipes = [
     name: 'Sałatka z grillowanymi warzywami',
     whichMeal: "kolacja",
     kcal: 320,
-    mom: null,
-    me: null,
+    mom: 0,
+    me: 2,
     ingredients: [
       {ingrName: 'cebula czerwona', amount: "1/2", unit: 'sztuki'},
       {ingrName: 'cukinia', amount: "ok. 100", unit: 'g'},
@@ -265,7 +265,7 @@ const recipes = [
     ],
     time: "40 minut",
     notes: "Sos winegret - w innym przepisie.",
-    imgSrc: ""
+    imgSrc: "./images/salatka_z_grillowanymi_warzywami.jpg"
   },
   {
     name: 'Sos winegret',
@@ -938,7 +938,7 @@ const recipes = [
     whichMeal: "kolacja",
     kcal: 340,
     mom: null,
-    me: null,
+    me: 2,
     ingredients: [
       {ingrName: 'woda', amount: 500, unit: 'g'},
       {ingrName: 'burak', amount: 1, unit: 'sztuka', gram: 70},
@@ -954,14 +954,14 @@ const recipes = [
     ],
     time: "30 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/carpaccio_z_buraczkiem_i_gruszka.jpg"
   },
   {
     name: 'Jogurt wege koko z musli i owocami',
     whichMeal: "śniadanie",
     kcal: 380,
     mom: null,
-    me: null,
+    me: 2,
     ingredients: [
       {ingrName: 'wegański jogurt kokosowy', amount: 1, unit: 'opakowanie', gram: 160},
       {ingrName: 'kiwi', amount: 1, unit: 'sztuka'},
@@ -974,14 +974,14 @@ const recipes = [
     ],
     time: "5 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/jogurt_wege_koko.jpg"
   },
   {
     name: 'Sałatka z winogronami i szynką parmeńską',
     whichMeal: "drugie śniadanie",
     kcal: 310,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'rukola', amount: 2, unit: 'garście'},
       {ingrName: 'winogrona', amount: 1, unit: 'garść', gram: 50},
@@ -1001,14 +1001,14 @@ const recipes = [
     ],
     time: "5 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/salatka_z_winogronami_i_szynka.jpg"
   },
   {
     name: 'Hawajskie szaszłyki z sosem salsa',
     whichMeal: "obiad",
     kcal: 380,
     mom: null,
-    me: null,
+    me: 1,
     ingredients: [
       {ingrName: 'jogurt naturalny', amount: 50, unit: 'g'},
       {ingrName: 'oliwa z oliwek', amount: 1, unit: 'łyżka'},
@@ -1040,14 +1040,14 @@ const recipes = [
     ],
     time: "10 minut + marynowanie (30 minut lub całą noc) + 35 minut + sos (25 minut)",
     notes: "2 porcje szaszłyków <br/> 4 porcje sosu salsa <br/> Zamiast sosu salsa można użyć innego sosu (kupnego) na bazie pomidorów np. słodko-kwaśny chili lub salsa do nachos (2-3 łyżki) - byle nie majonezowy.",
-    imgSrc: ""
+    imgSrc: "./images/hawajskie_szaszlyki.jpg"
   },
   {
     name: 'Tosty z burratą i pomidorami',
     whichMeal: "kolacja",
     kcal: 370,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'chleb żytni', amount: 2, unit: 'kromki'},
       {ingrName: 'oliwa z oliwek', amount: 1, unit: 'łyżeczka'},
@@ -1062,14 +1062,14 @@ const recipes = [
     ],
     time: "5 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/tosty_z_burrata_i_pomidorami.jpg"
   },
   {
     name: 'Kiełbasa z chrzanem i sałatką z surowych warzyw',
     whichMeal: "śniadanie",
     kcal: 370,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 1,
     ingredients: [
       {ingrName: 'kiełbasa (np. biała surowa/parówkowa/wędzona - z dużą zawartością mięsa)', amount: 1, unit: 'sztuka', gram: "100-120"},
       {ingrName: 'liść laurowy, ziele angielskie (jeśli kiełbasa biała)'},
@@ -1082,14 +1082,14 @@ const recipes = [
     ],
     time: "20 minut",
     notes: "Kaloryczność kiełbasy powinna odpowiadać max 300 kcal.",
-    imgSrc: ""
+    imgSrc: "./images/kielbasa_z_chrzanem_i_salatka.jpg"
   },
   {
     name: 'Sałatka pomarańczowa z miętą i pistacjami',
     whichMeal: "drugie śnidanie",
     kcal: 350,
     mom: null,
-    me: null,
+    me: 2,
     ingredients: [
       {ingrName: 'jogurt naturalny', amount: 150, unit: 'g'},
       {ingrName: 'mięta świeża', amount: "kilka", unit: 'listków'},
@@ -1103,14 +1103,14 @@ const recipes = [
     ],
     time: "5 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/salatka_pomaranczowa_z_mieta_i_pistacjami.jpg"
   },
   {
     name: 'Indyjska zupa Dahl',
     whichMeal: "obiad",
     kcal: 410,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'cebula', amount: 1, unit: 'nieduża sztuka', gram: 60},
       {ingrName: 'czosnek', amount: 2, unit: 'ząbki'},
@@ -1137,14 +1137,14 @@ const recipes = [
     ],
     time: "30 minut",
     notes: "4 porcje",
-    imgSrc: ""
+    imgSrc: "./images/indyjska_zupa_dahl.jpg"
   },
   {
     name: 'Sałatka meksykańska',
     whichMeal: "kolacja",
     kcal: 300,
     mom: null,
-    me: null,
+    me: 1,
     ingredients: [
       {ingrName: 'por', amount: "1/2", unit: 'sztuki', gram: 70},
       {ingrName: 'kukurydza konserwowa', amount: 100, unit: 'g'},
@@ -1163,14 +1163,14 @@ const recipes = [
     ],
     time: "15 minut",
     notes: "3 porcje",
-    imgSrc: ""
+    imgSrc: "./images/salatka_meksykanska.jpg"
   },
   {
     name: 'Wrap z tuńczykiem',
     whichMeal: "śniadanie",
     kcal: 410,
     mom: null,
-    me: null,
+    me: 1,
     ingredients: [
       {ingrName: 'papryka czerwona', unit: 'kawałek', gram: 50},
       {ingrName: 'ogórek konserwowy', amount: 1, unit: 'sztuka'},
@@ -1191,14 +1191,14 @@ const recipes = [
     ],
     time: "10 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/wrap_z_tunczykiem.jpg"
   },
   {
     name: 'Banan z orzechami',
     whichMeal: "drugie śniadanie",
     kcal: 260,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'banan', amount: 1, unit: 'sztuka'},
       {ingrName: 'orzechy (np. macadamia)', amount: 5, unit: 'sztuk', gram: 20},
@@ -1208,14 +1208,14 @@ const recipes = [
     ],
     time: "2 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/banan_z_orzechami.jpg"
   },
   {
     name: 'Jajka sadzone z mizerią i ziemniakami',
     whichMeal: "obiad",
     kcal: 420,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'ogórek gruntowy', amount: "1-2", unit: 'sztuki', gram: 100},
       {ingrName: 'szczypiorek'},
@@ -1237,14 +1237,14 @@ const recipes = [
     ],
     time: "30 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/jajka_sadzone_z_mizeria.jpg"
   },
   {
     name: 'Sałatka Caprese',
     whichMeal: "kolacja",
     kcal: 320,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'rukola', amount: 1, unit: 'spora garść'},
       {ingrName: 'pomidor', amount: 1, unit: 'sztuka'},
@@ -1260,14 +1260,14 @@ const recipes = [
     ],
     time: "5 minut",
     notes: "",
-    imgSrc: ""
+    imgSrc: "./images/salatka_caprese.jpg"
   },
   {
     name: 'Jajko poché z łososiem i fit sosem a\'la holenderskim',
     whichMeal: "śniadanie",
     kcal: 400,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'jajko', amount: 1, unit: 'sztuka'},
       {ingrName: 'chleb żytni', amount: 2, unit: 'kromki'},
@@ -1287,14 +1287,14 @@ const recipes = [
     ],
     time: "20 minut",
     notes: "Można zamiast jajka w koszulce przyrządzić po prostu jajko sadzone (z minimalną ilością tłuszczu, żeby nie podbijać kaloryczności; 1 łyżka oliwy = 90 kcal).",
-    imgSrc: ""
+    imgSrc: "./images/jajko_poche_z_lososiem.jpg"
   },
   {
     name: 'Kakaowy pudding chia z truskawkami',
     whichMeal: "drugie śniadanie",
     kcal: 260,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'wiórki kokosowe', amount: 2, unit: 'łyżki', gram: 12},
       {ingrName: 'kakao', amount: 1, unit: 'łyżka', gram: 10},
@@ -1309,14 +1309,14 @@ const recipes = [
     ],
     time: "5 minut + chłodzenie (min. 3h) + 5 minut",
     notes: "2 porcje <br/> Przygotować minimum 3-4 godziny wcześniej!!!",
-    imgSrc: ""
+    imgSrc: "./images/kakaowy_pudding_chia.jpg"
   },
   {
     name: 'Gołąbki w sosie pomidorowym',
     whichMeal: "obiad",
     kcal: 420,
-    mom: null,
-    me: null,
+    mom: 2,
+    me: 2,
     ingredients: [
       {ingrName: 'kapusta biała, młoda/włoska/stożkowa', amount: "8-10", unit: 'dużych liści'},
       {ingrName: 'cebula', amount: 1, unit: 'sztuka', gram: "100-120"},
@@ -1334,7 +1334,7 @@ const recipes = [
     ],
     steps: [
       "W dużym garnku umieścić kapustę, zalać wodą, zagotować i gotować ok. 10-15 minut.",
-      "Wodę z gotowania kapusty zachować. Wykąć kapustę, oddzielić duże liście, usunąć twarde nasady.",
+      "Wodę z gotowania kapusty zachować. Wyjąć kapustę, oddzielić duże liście, usunąć twarde nasady.",
       "Do naczynia miksującego włożyć cebulę i czosnek, rozdrobnić [5 s / obr. 5], dusić na maśle [3 min / 120&deg;C / obr. 1].",
       "Dodać mięso, doprawić przyprawami, dodać jajko i wymieszać z kopystką [30 s / obr. wsteczne 4].",
       "Farsz zawinąć w liście kapusty i ułożyć na przystawce Varoma.",
@@ -1346,7 +1346,7 @@ const recipes = [
     ],
     time: " minut",
     notes: "4 porcje <br/> Jeśli sos wyjdzie zbyt rzadki, można zagęścić go 1 łyżką mąki z ciecierzycy lub owsianej.",
-    imgSrc: ""
+    imgSrc: "./images/golabki_w_sosie_pomidorowym.jpg"
   },
   {
     name: 'Grillowane pieczarki nadziewane serami z papryczką chili',
@@ -1374,6 +1374,245 @@ const recipes = [
     time: " minut",
     notes: "2 porcje <br/> Dość ciężkie jak na kolację.",
     imgSrc: "./images/grillowane_pieczarki_nadziewane_serami.jpg"
+  },
+  {
+    name: 'Owsianka banoffee',
+    whichMeal: "śniadanie",
+    kcal: 380,
+    mom: 1,
+    me: 2,
+    ingredients: [
+      {ingrName: 'banan', amount: "1/2", unit: 'sztuki', gram: 60},
+      {ingrName: 'jogurt naturalny', amount: 3, unit: 'łyżki', gram: 60},
+      {ingrName: 'płatki owsiane', amount: 4, unit: 'łyżki', gram: 40},
+      {ingrName: 'migdały, płatki', amount: 1, unit: 'łyżka', gram: 10},
+      {ingrName: 'pudding proteinowy o smaku słony karmel Go Avtive', amount: "1/2", unit: 'opakowania', gram: 100},
+    ],
+    steps: [
+      "W naczyniu miksującym umieścić płatki owsiane, dodać 100g wody, gotować 5 minut/ 95°C/ obr. wsteczne 1.",
+      "Dodać jogurt, wymieszać 10 s/ obr. wsteczne 1,5.",
+      "Banana pokroić w plasterki. W słoiczku lub salaterce umieścić na dnie kilka piastrów banana, na to płatki owsiane z jogurtem i pudding.","Wierzch posypać płatkami migdałów."
+    ],
+    time: "10 minut",
+    notes: "",
+    imgSrc: "./images/owsianka_banoffee.jpg"
+  },
+  {
+    name: 'Sałatka z kozim serkiem, mandarynką i żurawiną',
+    whichMeal: "drugie śniadanie",
+    kcal: 340,
+    mom: 2,
+    me: 2,
+    ingredients: [
+      {ingrName: 'orzechy włoskie', amount: 1, unit: 'łyżka', gram: 10},
+      {ingrName: 'mandarynka', amount: 1, unit: 'sztuka'},
+      {ingrName: 'ser kozi, miękki (krążki)', amount: 40, unit: 'g'},
+      {ingrName: 'sałata lodowa, rukola', amount: "kilka", unit: 'liści'},
+      {ingrName: 'żurawina suszona', amount: 1, unit: 'łyżka', gram: 20},
+      {ingrName: 'sok z cytryny', amount: 1, unit: 'łyżeczka'},
+      {ingrName: 'musztarda', amount: "1/2", unit: 'łyżeczki'},
+      {ingrName: 'oliwa z oliwek', amount: 1, unit: 'łyżeczka'},
+    ],
+    steps: [
+      "Żurawinę zalać wrzątkiem i odstawić do namoczenia.",
+      "Na talerzu ułożyć sałaty, dodać pokruszony ser, ząbki mandarynki.",
+      "Dodać odsączoną żurawinę i pokruszone orzechy.",
+      "Wymieszać składniki sosu (miód, musztarda, sok z cytryny, oliwa) i polać na sałatkę."
+    ],
+    time: "10 minut",
+    notes: "",
+    imgSrc: "./images/salatka_z_kozim_serkiem.jpg"
+  },
+  {
+    name: 'Meksykańska zupa z kurczakiem',
+    whichMeal: "obiad",
+    kcal: 370,
+    mom: 2,
+    me: 2,
+    ingredients: [
+      {ingrName: 'batat', amount: 1, unit: 'sztuka', gram: 300},
+      {ingrName: 'filet z piersi kurczaka', amount: 300, unit: 'g'},
+      {ingrName: 'czosnek', amount: 2, unit: 'ząbki', gram: 10},
+      {ingrName: 'cebula', amount: 1, unit: 'sztuka', gram: 80},
+      {ingrName: 'oliwa z oliwek', amount: "2,5", unit: 'łyżki', gram: 25},
+      {ingrName: 'soczewica czerwona, nasiona suche', amount: "1/3", unit: 'szklanki', gram: 60},
+      {ingrName: 'kmin rzymski, słodka papryka, ostra papryka, kurkuma, suszone oregano, kolendra mielona, sól, pieprz', amount: "po 1/2", unit: 'łyżeczki'},
+      {ingrName: 'bulion rosołowy', amount: 1, unit: 'litr'},
+      {ingrName: 'śmietana 18%', amount: 100, unit: 'g'},
+      {ingrName: 'chleb żytni', amount: 2, unit: 'kromki'},
+      {ingrName: 'sok z limonki'},
+      {ingrName: 'świeża kolendra lub natka pieruszki'},
+    ],
+    steps: [
+      "Batata i pierś z kurczaka pokroić w kosteczkę.",
+      "W naczyniu umieścić czosnek, rozdrobnić [3 s / obr. 8], dodać cebulę, rozdrobnić 5 s/ obr. 5.",
+      "Dodać 15g oliwy i batata, dusić [5 min / 120°C / obr. wsteczne 1].",
+      "Dodać suchą, przepłukaną soczewicę oraz kmin rzymski, słodką i ostrą paprykę, kurkumę, oregano i kolendrę, dusić [1 min / 120°C / obr. wsteczne 1].",
+      "Jeżeli posiadasz osłonę noża miksującego, przełóż zawartość do miski, umieść w naczyniu miksującym osłonę noża i z powrotem przełóż wszystko do naczynia.",
+      "Dodać gorący bulion, gotować [5 min/ 100°C/ obr. wsteczne 1].",
+      "Dodać pokrojonego kurczaka, doprawić pieprzem i w razie potrzeby solą.",
+      "Gotować [15 min/ 100°C/ obr. wsteczne 1].",
+      "W tym czasie rozgrzać piekarnik do 200°C, chleb pokroić w kosteczkę, skropić oliwą, posypać przyprawami, upiec grzanki (3-4 minuty).",
+      "Wyciągnąć osłonę noża, dodać śmietanę i wymieszać [10 s/ obr. wsteczne 1,5].",
+      "Podawać z posiekaną kolendrą lub natką pietruszki oraz z grzankami. Można skropić sokiem z limonki."
+    ],
+    time: "40 minut",
+    notes: "4 porcje",
+    imgSrc: "./images/meksykańska_zupa_z_kurczakiem.jpg"
+  },
+  {
+    name: 'Szybka pizza na spodzie z tortilli',
+    whichMeal: "kolacja",
+    kcal: 360,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'tortilla wieloziarnista', amount: 2, unit: 'sztuki (1 na porcję)'},
+      {ingrName: 'koncentrat pomidorowy', amount: 3, unit: 'łyżeczki'},
+      {ingrName: 'zioła prowansalskie', amount: 1, unit: 'łyżeczka'},
+      {ingrName: 'sól, pieprz'},
+      {ingrName: 'mozzarella, kulka', amount: 60, unit: 'g'},
+      {ingrName: 'papryka chili', amount: "kawałek", gram: "5-10"},
+      {ingrName: 'szynka parmeńska/szwardzwaldzka', amount: 6, unit: 'plastrów', gram: 90},
+      {ingrName: 'pomidorki koktajlowe', amount: 8, unit: 'sztuk'},
+      {ingrName: 'oliwki czarne lub zielone', amount: 10, unit: 'sztuk', gram: 30},
+      {ingrName: 'rukola', amount: 2, unit: 'garście'},
+    ],
+    steps: [
+      "Na suchej patelni podpiec placek z tortilli, przerzucić na drugą stronę. Placek posmarować sosem pomidorowym (wymieszać koncentrat pomidorowy, 3 łyżki wody, zioła prowansalskie sól i pieprz).",
+      "Ułożyć plastry mozzarelli (można utrzeć i posypać), ułożyć plastry szynki, połówki pomidorków i oliwki (można dodać cienkie plasterki chili).",
+      "Pizzę podpiekać na patelni, na małym ogniu, pod przykryciem do czasu, aż ser się roztopi (można również piec w piekarniku- 180 stopni, ok 5 minut).",
+      "Po upieczeniu obłożyć rukolą."
+    ],
+    time: "15 minut (1 porcja)",
+    notes: "2 porcje",
+    imgSrc: "./images/szybka_pizza_na_spodzie_z_tortilli.jpg"
+  },
+  {
+    name: 'Pasta z koziego serka z suszonymi pomidorami',
+    whichMeal: "śniadanie",
+    kcal: 420,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'rukola', amount: 1, unit: 'mała garść'},
+      {ingrName: 'morele suszone', amount: 30, unit: 'g'},
+      {ingrName: 'pomidory suszone w oleju', amount: 40, unit: 'g'},
+      {ingrName: 'ser kozi, miękki', amount: 120, unit: 'g'},
+      {ingrName: 'miód', amount: 1, unit: 'łyżeczka'},
+      {ingrName: 'sól, pieprz'},
+      {ingrName: 'chleb żytni razowy', amount: 2, unit: 'kromki (1 na porcję)'},
+      {ingrName: 'surowe warzywa (np. pomidor, papryka, ogórek)'},
+    ],
+    steps: [
+      "W naczyniu umieścić rukolę, rozdrobnić [3 s/ obr. 8].",
+      "Dodać morele (jeśli są twarde, to uprzednio można namoczyć) i suszone pomidory, rozdrobnić [3 s/ obr. 8].",
+      "Dodać serek kozi, miód, po szczypcie soli i pieprzu, wymieszać [15 s/ obr. wsteczne 2,5].",
+      "Podawać na chlebie z ulubionymi warzywami."
+    ],
+    time: " minut",
+    notes: "2 porcje",
+    imgSrc: ""
+  },
+  {
+    name: 'Mus czekoladowy',
+    whichMeal: "drugie śniadanie",
+    kcal: 310,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'awokado', amount: "1/2", unit: 'sztuki'},
+      {ingrName: 'banan', amount: 1, unit: 'sztuka', gram: 120},
+      {ingrName: 'kakao', amount: 1, unit: 'łyżka', gram: 10},
+      {ingrName: 'napój migdałowy (lub dowolne mleko roślinne)', amount: "60-120", unit: 'g (w zależności od pożądanej konsystencji)'},
+    ],
+    steps: [
+      "Wszystkie składniki zmiksować na gładki mus [30 s/ obr 8]."
+    ],
+    time: " minut",
+    notes: "",
+    imgSrc: ""
+  },
+  {
+    name: 'Sałatka CEZAR',
+    whichMeal: "obiad",
+    kcal: 400,
+    mom: null,
+    me: null,
+    ingredients: [
+      {group: 'SOS (na 2 porcje):'},
+      {ingrName: 'czosnek', amount: 1, unit: 'ząbek'},
+      {ingrName: 'jogurt naturalny', amount: 4, unit: 'łyżki'},
+      {ingrName: 'musztarda', amount: 2, unit: 'łyżeczki'},
+      {ingrName: 'sok z cytryny', amount: "kilka", unit: 'kropli'},
+      {ingrName: 'sól, pieprz, odrobina sosu sojowego'},
+      {group: 'Sałatka (na 1 porcję):'},
+      {ingrName: 'jajko', amount: 1, unit: 'sztuka'},
+      {ingrName: 'sałata lodowa', amount: "1/2", unit: 'sztuki'},
+      {ingrName: 'filet z piersi kurczaka', amount: "100-120", unit: 'g'},
+      {ingrName: 'Przyprawy do kurczaka: papryka słodka, cayenne/chili/ostra papryka, pieprz ziołowy, sól, mielona kolendra (symbolicznie), pieprz'},
+      {ingrName: 'oliwa z oliwek', amount: 1, unit: 'łyżeczka'},
+      {ingrName: 'pomidorki koktajlowe', amount: 5, unit: 'sztuk'},
+      {ingrName: 'parmezan tarty', amount: 1, unit: 'łyżka', gram: 12},
+      {ingrName: 'chleb żytni, razowy', amount: "1/2", unit: 'kromki'},
+    ],
+    steps: [
+      "Do naczynia włożyć czosnek, rozdrobnić [3 s/ obr. 8]. Zgarnąć ze ścianek.",
+      "Dodać jogurt, musztardę, sok z cytryny i przyprawy, mieszać [10 s/ obr. 5]. Umyć naczynie.",
+      "Jajko umieścić w koszyczku, gotować na półmiękko: 400 g wody, [12-13min/ Varoma/ obr.1], pokroić w ósemki.",
+      "Sałatę drobno poszatkować i wymieszać dokładnie z sosem w głębokiej misce.",
+      "Kurczaka pokroić na płaskie kawałki, przyprawić, skropić oliwą i ugrillować na suchej patelni z dwóch stron lub upiec w piekarniku w 180°C.",
+      "W międzyczasie pokroić chleb w kosteczkę i dorzucić na 2-3 minuty do piekarnika.",
+      "Do sałaty dodać pomidorki, mięso i jajko.",
+      "Podawać posypaną parmezanem, świeżo zmielonym np. kolorowym pieprzem oraz grzankami z chleba żytniego."
+    ],
+    time: " minut",
+    notes: "",
+    imgSrc: ""
+  },
+    {
+    name: 'Krem z gruszki i pietruszki',
+    whichMeal: "kolacja",
+    kcal: 300,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: 'pietruszka, korzeń', amount: 4, unit: 'sztuki', gram: 320},
+      {ingrName: 'masło klarowane', amount: 1, unit: 'łyżka', gram: 16},
+      {ingrName: 'gruszka', amount: 1, unit: 'sztuka'},
+      {ingrName: 'curry', amount: 1, unit: 'łyżeczka'},
+      {ingrName: 'sól, pieprz'},
+      {ingrName: 'bulion warzywny', amount: 500, unit: 'g'},
+      {ingrName: 'boczek wędzony', amount: 4, unit: 'plastry (2 na porcję)', gram: 60},
+    ],
+    steps: [
+      "Pietruszkę rozdrobnić [3 s/ obr. 5] i dusić na masełku [5 min/ 120°C/ obr. 1].",
+      "Dodać gruszkę pokrojoną w grubą kostkę i dusić kolejne [3 min/ 120°C/ obr. 1].",
+      "Dodać curry, sól i pieprz i zalać bulionem. Gotować ok. [15 minut/ 100°C/ obr. 1].",
+      "Zblendować na gładką masę [1 min/ obr.10].",
+      "Podawać z chipsami z boczku wędzonego (2-3 minuty w piekarniku, 200°C, funkcja grill)."
+    ],
+    time: " minut",
+    notes: "2 porcje",
+    imgSrc: ""
+  },
+
+  
+  {
+    name: '',
+    whichMeal: "śniadanie",
+    kcal: 0,
+    mom: null,
+    me: null,
+    ingredients: [
+      {ingrName: '', amount: 1, unit: 'sztuka', gram: 150},
+    ],
+    steps: [
+      ""
+    ],
+    time: " minut",
+    notes: "",
+    imgSrc: ""
   },
 
 

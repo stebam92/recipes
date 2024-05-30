@@ -136,6 +136,11 @@ hr {
   padding-left: 1rem;
 }
 
+h4 {
+  text-decoration: underline solid whitesmoke 1px;
+  padding: .5rem 0;
+}
+
 .steps {
   /* list-style-type: decimal-leading-zero; */
   padding-left: 1rem;
